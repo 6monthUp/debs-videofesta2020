@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="kor" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DEBS 영상제</title>
+    <script>
+    </script>
+    <style>
+    #title {
+      font-size: 20px;
+      height: 100px;
+      padding-top: 10px;
+    }
+    #menu {
+      font-size: 20px;
+      height: 50px;
+      padding-bottom: 10px;
+    }
+    #side_menu {
+      position: absolute;
+      left: 15vw;
+      top: 30vh;
+    }
+    #sns {
+      position: absolute;
+      right: 15vw;
+      top: 30vh;
+    }
+    div {
+      text-align: center;
+    }
+    span {
+      width: 200px;
+    }
+    iframe {
+      border:0px solid black;
+      width: 50vw;
+      height: 70vh;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="title">
+      SNS:너와 내가 소통하는 시간
+    </div>
+    <div id="menu">
+      <!--onClick="alert('11월 12일에 공개됩니다.'); document.location='outline.html';" //art, about 타겟 뒤에 붙이기-->
+      <span><a href="main.html" target="frame">main</a></span>
+      <span><a href="art.html" target="frame">art</a></span>
+      <span><a href="about.html" target="frame">about</a></span>
+    </div>
+    <div id="sns">
+      <br col=3px;>
+      <p><a href="https://www.youtube.com/channel/UCXDZSehQ1RXv8XmQ7hyOsjw/featured" target="_blank"><img src="img/youtube_1.png"></a></p>
+      <p><a href="https://www.instagram.com/debs_dongduk/" target="_blank"><img src="img/instagram.png"></p>
+      <p><a href="https://www.facebook.com/dongdukdebs" target="_blank"><img src="img/facebook_1.png"></a></p>
+    </div>
+    <div id="side_menu">
+      <iframe name="frame_menu" scrolling="no"></iframe>
+    </div>
+    <div>
+      <iframe src="main.html" name="frame" scrolling="no"></iframe>
+    </div>
+    <div>
+      <img src="img/bottom_img.png"">
+      <a href="https://debs.dongduk.ac.kr:7450/" target="_blank">DEBS공식사이트</a>
+  </body>
+</html>
