@@ -3,7 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>DEBS 영상제</title>
+    <script src="jquery-3.5.1.min.js"></script>
     <script>
+    $(document).ready(function() {
+      $("#button").click(function() {
+        $("#menu_in").slideToggle("slow");
+      });
+    });
     </script>
     <style>
     #title {
@@ -26,29 +32,59 @@
       right: 15vw;
       top: 30vh;
     }
+    #frame_menu {
+      position: absolute;
+      left: 3vw;
+      top: 3vh;
+      width: 5vw;
+    }
     div {
       text-align: center;
+    }
+    table, td, th {
+      margin:0 auto;
+      border-collapse: collapse;
     }
     span {
       width: 200px;
     }
     iframe {
-      border:0px solid black;
+      border:1px solid black;
       width: 50vw;
       height: 70vh;
+    }
+    p {
+      text-align: center;
     }
     </style>
   </head>
   <body>
     <div id="title">
-      SNS:너와 내가 소통하는 시간
+      <a href="outline.html">SNS:너와 내가 소통하는 시간</a>
     </div>
     <div id="menu">
       <!--onClick="alert('11월 12일에 공개됩니다.'); document.location='outline.html';" //art, about 타겟 뒤에 붙이기-->
-      <span><a href="main.html" target="frame">main</a></span>
-      <span><a href="art.html" target="frame">art</a></span>
-      <span><a href="about.html" target="frame">about</a></span>
+      <span><a href="main/intro.html" target="frame"><a href="menu/menu_main.html" target="frame_menu">main</a></a></span>
+      <span><a href="art/debs_art.html" target="frame">art</a></span>
+      <span><a href="about/cong_message.html" target="frame">about</a></span>
     </div>
+    <p id="button"><img src="img/instagram.png">
+      <table id="menu_in">
+        <tr>
+          <td><a href="main/intro.html" target="frame">방송국소개</a></td>
+          <td><a href="art/debs_art.html" target="frame">국원작품</a></td>
+          <td><a href="about/cong_message.html" target="frame">축사</a></td>
+        </tr>
+        <tr>
+          <td><a href="main/timetable.html" target="frame">편성표</a></td>
+          <td><a href="art/som_art.html" target="frame">솜솜영상대회</a></td>
+          <td><a href="about/greeting.html" target="frame">모시는 글</a></td>
+        </tr>
+        <tr>
+          <td><a href="main/history.html" target="frame">연혁</a></td>
+          <td></td>
+          <td><a href="about/epilogue.html" target="frame">제작후기</a></td>
+      </table>
     <div id="sns">
       <br col=3px;>
       <p><a href="https://www.youtube.com/channel/UCXDZSehQ1RXv8XmQ7hyOsjw/featured" target="_blank"><img src="img/youtube_1.png"></a></p>
@@ -56,13 +92,13 @@
       <p><a href="https://www.facebook.com/dongdukdebs" target="_blank"><img src="img/facebook_1.png"></a></p>
     </div>
     <div id="side_menu">
-      <iframe name="frame_menu" scrolling="no"></iframe>
+      <!--<iframe name="frame_menu" id="frame_menu" scrolling="no"></iframe>-->
     </div>
     <div>
-      <iframe src="main.html" name="frame" scrolling="no"></iframe>
+      <iframe src="main.html" name="frame" id="frame" scrolling="no"></iframe>
     </div>
     <div>
-      <img src="img/bottom_img.png"">
+      <img src="img/bottom_img.png">
       <a href="https://debs.dongduk.ac.kr:7450/" target="_blank">DEBS공식사이트</a>
   </body>
 </html>
