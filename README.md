@@ -1,2 +1,0 @@
-# DEBS_moviepage
-test
