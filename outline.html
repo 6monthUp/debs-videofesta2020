@@ -28,15 +28,21 @@
       top: 30vh;
     }
     #sns {
-      position: absolute;
-      right: 15vw;
-      top: 30vh;
+      position: relative;
+      left: 2em;
+      top: 2em;
     }
     #frame_menu {
       position: absolute;
-      left: 3vw;
-      top: 3vh;
-      width: 5vw;
+      left: 3%;
+      top: 3%;
+      width: 3%;
+    }
+    #body_main {
+      margin: 0px auto;
+      width: 45em;
+      border-right: 1px solid #aeaeae;
+      border-left: 1px solid #aeaeae;
     }
     div {
       text-align: center;
@@ -46,12 +52,12 @@
       border-collapse: collapse;
     }
     span {
-      width: 200px;
+      width: 400px;
     }
     iframe {
-      border:1px solid black;
-      width: 50vw;
-      height: 70vh;
+      border:0px solid black;
+      width: 45em;
+      height: 100vh;
     }
     p {
       text-align: center;
@@ -64,12 +70,14 @@
     </div>
     <div id="menu">
       <!--onClick="alert('11월 12일에 공개됩니다.'); document.location='outline.html';" //art, about 타겟 뒤에 붙이기-->
-      <span><a href="main/intro.html" target="frame"><a href="menu/menu_main.html" target="frame_menu">main</a></a></span>
-      <span><a href="art/debs_art.html" target="frame">art</a></span>
-      <span><a href="about/cong_message.html" target="frame">about</a></span>
+      <span><a href="main/intro.html" target="frame"><img src="img/main.png" width="120px"></a>
+      <span><a href="art/debs_art.html" target="frame"><img src="img/art.png" width="120px"></a>
+      <span><a href="about/cong_message.html" target="frame"><img src="img/about.png" width="120px"></a></span>
     </div>
-    <p id="button"><img src="img/instagram.png">
-      <table id="menu_in">
+    <p id="button"><img src="img/v.png">
+    <div id="menu_in">
+      <hr noshade size=1px color="#aeaeae">
+      <table>
         <tr>
           <td><a href="main/intro.html" target="frame">방송국소개</a></td>
           <td><a href="art/debs_art.html" target="frame">국원작품</a></td>
@@ -84,21 +92,37 @@
           <td><a href="main/history.html" target="frame">연혁</a></td>
           <td></td>
           <td><a href="about/epilogue.html" target="frame">제작후기</a></td>
+        </table>
+      </div>
+      <hr noshade size=1px color="#aeaeae">
+      <table>
+        <tr>
+          <td>
+            <div id="side_menu">
+                <!--<iframe name="frame_menu" id="frame_menu" scrolling="no"></iframe>-->
+            </div>
+          </td>
+          <td>
+            <div id="body_main">
+              <iframe src="main.html" name="frame" id="frame" scrolling="no"></iframe>
+            </div>
+          </td>
+          <td valign="top";>
+            <div id="sns">
+              <p><a href="https://www.youtube.com/channel/UCXDZSehQ1RXv8XmQ7hyOsjw/featured" target="_blank"><img src="img/youtube.png" width="50px"></a></p>
+              <p><a href="https://www.instagram.com/debs_dongduk/" target="_blank"><img src="img/instagram.png" width="40px"></p>
+              <p><a href="https://www.facebook.com/dongdukdebs" target="_blank"><img src="img/facebook.png" width="40px"></a></p>
+            </div>
+          </td>
+        </tr>
       </table>
-    <div id="sns">
-      <br col=3px;>
-      <p><a href="https://www.youtube.com/channel/UCXDZSehQ1RXv8XmQ7hyOsjw/featured" target="_blank"><img src="img/youtube_1.png"></a></p>
-      <p><a href="https://www.instagram.com/debs_dongduk/" target="_blank"><img src="img/instagram.png"></p>
-      <p><a href="https://www.facebook.com/dongdukdebs" target="_blank"><img src="img/facebook_1.png"></a></p>
-    </div>
-    <div id="side_menu">
-      <!--<iframe name="frame_menu" id="frame_menu" scrolling="no"></iframe>-->
-    </div>
+    <hr noshade size=1px color="#aeaeae">
     <div>
-      <iframe src="main.html" name="frame" id="frame" scrolling="no"></iframe>
-    </div>
-    <div>
-      <img src="img/bottom_img.png">
-      <a href="https://debs.dongduk.ac.kr:7450/" target="_blank">DEBS공식사이트</a>
+      <span>
+        <img src="img/bottom_img.png">
+      </span>
+      <span valign="top">
+        <a href="https://debs.dongduk.ac.kr:7450/" target="_blank">DEBS공식사이트</a>
+      </span>
   </body>
 </html>
