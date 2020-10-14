@@ -1,0 +1,34 @@
+body {
+  background-color: 3c637a;
+}
+#menu_table {
+    width: 120px;
+    font-size: 15px;
+}
+#menu_table:link {color: black;}
+#menu_table:visited {color: black;}
+#menu_table:hover {text-decoration: none; color: red;}
+#title {
+  font-size: 20px;
+  height: 100px;
+  padding-top: 10px;
+}
+#menu {
+  font-size: 20px;
+  height: 50px;
+  padding-bottom: 10px;
+}
+
+div {
+  text-align: center;
+}
+table, td, th {
+  margin:0 auto;
+  border-collapse: collapse;
+}
+span {
+  width: 400px;
+}
+p {
+  text-align: center;
+}
