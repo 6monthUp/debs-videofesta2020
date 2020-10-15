@@ -17,7 +17,7 @@
     </script>
     <style>
     .poster {
-      width: 90%;
+      width: 100%;
     }
     #side_menu {
       position: absolute;
@@ -25,7 +25,11 @@
       top: 30vh;
     }
     .sns {
-      padding: 3px;
+      height: 3px;
+      overflow:inherit;
+      position: relative;
+      left: 300px;
+      bottom: 50px;
     }
     #frame_menu {
       position: absolute;
@@ -43,10 +47,6 @@
       padding: 5px;
       float:none;
     }
-    #main_div {
-      float:left;
-      padding: 10px;
-    }
   </style>
   </head>
   <body>
@@ -57,16 +57,16 @@
       <a href="main.html">SNS:너와 내가 소통하는 시간</a>
     </div>
     <div id="menu">
-      <!--onClick="alert('11월 12일에 공개됩니다.'); document.location='main.html';" //art, about 타겟 뒤에 붙이기-->
+      <!--onClick="alert('11월 12일에 공개됩니다.'); document.location='main.html';" //art, about 타겟 뒤에 붙이기
       <span><a href="main/intro.html" target="_self"><img src="img/main.png" width="120px"></a>
       <span><a href="art/debs_art.html" target="_self"><img src="img/art.png" width="120px"></a>
-      <span><a href="about/cong_message.html" target="_self"><img src="img/about.png" width="120px"></a>
-      <!--
+      <span><a href="about/cong_message.html" target="_self"><img src="img/about.png" width="120px"></a> -->
       <span><a href="main.html" target="_self" onClick="alert('11월 12일에 공개됩니다.');"><img src="img/main.png" width="120px"></a>
       <span><a href="main.html" target="_self" onClick="alert('11월 12일에 공개됩니다.');"><img src="img/art.png" width="120px"></a>
-      <span><a href="main.html" target="_self" onClick="alert('11월 12일에 공개됩니다.');"><img src="img/about.png" width="120px"></a>-->
+      <span><a href="main.html" target="_self" onClick="alert('11월 12일에 공개됩니다.');"><img src="img/about.png" width="120px"></a>
     </div>
     <!--<p><img src="img/v.png" class="button">-->
+
     <div id="menu_in">
       <hr noshade size=1px color="#aeaeae">
       <table>
@@ -86,12 +86,13 @@
           <td id="menu_table"><a href="about/epilogue.html">제작후기</a></td>
         </table>
       </div>
-      <hr noshade size=1px color="#aeaeae">
-      <div id="main_div" class="sns">
-        <div id="main_sns"><a href="https://www.youtube.com/channel/UCXDZSehQ1RXv8XmQ7hyOsjw/featured" target="_blank"><img src="img/youtube.png" width="50px"></a></div>
-        <div id="main_sns"><a href="https://www.instagram.com/debs_dongduk/" target="_blank"><img src="img/instagram.png" width="40px"></a></div>
-        <div id="main_sns"><a href="https://www.facebook.com/dongdukdebs" target="_blank"><img src="img/facebook.png" width="40px"></a></div>
+      <div class="sns">
+        <span id="main_sns"><a href="https://www.youtube.com/channel/UCXDZSehQ1RXv8XmQ7hyOsjw/featured" target="_blank"><img src="img/youtube.png" width="50px"></a></span>
+        <span id="main_sns"><a href="https://www.instagram.com/debs_dongduk/" target="_blank"><img src="img/instagram.png" width="40px"></a></span>
+        <span id="main_sns"><a href="https://www.facebook.com/dongdukdebs" target="_blank"><img src="img/facebook.png" width="40px"></a></span>
       </div>
+
+      <hr noshade size=1px color="#aeaeae">
       <div id="main_div" class="poster">
         <img src="img/포스터 편집용.png" style="width: 100%;">
         <p>-메인 페이지: 포스터 이미지 들어갈 예정-
@@ -103,14 +104,12 @@
         <p>이미지 폰트/색상/배경 변경 가능
         <hr noshade size=1px color="#aeaeae">
       </div>
-      <div>
-      <span>
+      <div style="float: left;">
         <img src="img/bottom_img.png">
-      </span>
-      <span valign="top">
-        <a href="https://debs.dongduk.ac.kr:7450/" target="_blank">DEBS공식사이트</a>
-      </span>
-    </div>
+      </div>
+      <div style="float: left;">
+        <a href="https://debs.dongduk.ac.kr:7450/" target="_blank" width="305px">DEBS공식사이트</a>
+      </div>
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
