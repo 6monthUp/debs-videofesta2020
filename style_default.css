@@ -5,9 +5,9 @@ body {
     width: 120px;
     font-size: 15px;
 }
-#menu_table:link {color: black;}
-#menu_table:visited {color: black;}
-#menu_table:hover {text-decoration: none; color: red;}
+#menu_in:link {color: black;}
+#menu_in:visited {color: black;}
+#menu_in:hover {text-decoration: none; color: red;}
 #title {
   font-size: 20px;
   height: 100px;
@@ -18,7 +18,11 @@ body {
   height: 50px;
   padding-bottom: 10px;
 }
-
+#main {
+  width: 80%;
+  margin:0 auto;
+  max-width: 500px;
+}
 div {
   text-align: center;
 }
@@ -28,7 +32,4 @@ table, td, th {
 }
 span {
   width: 400px;
-}
-p {
-  text-align: center;
 }
