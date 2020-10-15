@@ -4,12 +4,14 @@
 }
 a:link {color: black;}
 a:visited {color: black;}
-a:hover {text-decoration: none; color: blue;}
+a:hover {text-decoration: none; color: rgb(70, 110, 135);}
 a > img:hover {position: relative; bottom: 10px;}
 #title {
   font-size: 20px;
-  height: 100px;
-  padding-top: 10px;
+  padding: 40px;
+}
+#title h2 {
+  font-weight: bold
 }
 #menu {
   font-size: 20px;
@@ -24,7 +26,7 @@ a > img:hover {position: relative; bottom: 10px;}
   line-height: 200%;
 }
 body {
-  background-color: #98b2bf;
+  background-color: rgb(70, 110, 135);
   background-repeat: no-repeat;
   background-position: center;
   background-position: top;
@@ -61,6 +63,13 @@ span {
   }
 }
 @media (min-width: 480px) {
+  #menu img {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #menu_in td {
+    width: 220px;
+  }
   #under img {
     max-width: 300px;
   }
@@ -68,7 +77,6 @@ span {
     width: 120px;
   }
 }
-
 /*
 @media (max-width:767px) {
   body {  background-image: url('img/포스터 편집용_원본길이.png');  }
@@ -76,4 +84,3 @@ span {
 @media (min-width: 768px) {
   body {  background-image: url('img/포스터 편집용.png'); }
 }*/
-
