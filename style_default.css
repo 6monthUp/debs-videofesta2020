@@ -6,16 +6,12 @@ a:link {color: black;}
 a:visited {color: black;}
 a:hover {text-decoration: none; color: rgb(70, 110, 135);}
 a > img:hover {position: relative; bottom: 10px;}
-#title {
-  font-size: 20px;
-  padding: 40px;
-}
 #title h2 {
   font-weight: bold
 }
 #menu {
   font-size: 20px;
-  padding-bottom: 10px;
+  margin-bottom: 0px;
 }
 #main {
   width: 100%;
@@ -55,6 +51,10 @@ span {
   padding-top: 10px;
 }
 @media (max-width:767px) {
+  #title {
+    font-size: 20px;
+    padding: 20px;
+  }
   #under img {
     max-width: 200px;
   }
@@ -67,19 +67,20 @@ span {
   }
 }
 @media (min-width: 768px) {
+  #title {
+    font-size: 20px;
+    padding: 30px;
+  }
   #menu img {
     margin-left: 50px;
     margin-right: 50px;
+    width: 120px;
   }
   #menu_in td {
     width: 220px;
   }
   #under img {
     max-width: 300px;
-  }
-  #menu img{
-    width: 120px;
-  }
 }
 /*
 @media (max-width:767px) {
