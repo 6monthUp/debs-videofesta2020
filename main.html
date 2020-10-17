@@ -12,14 +12,13 @@
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
     <link type="text/css" rel="stylesheet" href="style_default.css"></link>
     <script src="jquery-3.5.1.min.js"></script>
-    <script>
-    /*$(document).ready(function() {
-      $(".button").click(function() {
-        $("#menu_in").slideToggle("slow");
+    <!--<script>
+      $(document).ready(function() {
+        $(".button").click(function() {
+          $("#menu_in").slideToggle("slow");
+        });
       });
-    });*/
-      //<img src="img/포스터 편집용.png" style="width: 100%;" >
-    </script>
+    </script>-->
     <style>
     .poster {
       width: 100%;
@@ -48,9 +47,6 @@
       border-right: 0px solid #aeaeae;
       border-left: 0px solid #aeaeae;
     }
-    #main_div {
-        /*background-color: rgba(255, 255, 255, 0.7);*/
-    }
   </style>
   </head>
   <body>
@@ -63,32 +59,40 @@
     </div>
     <hr noshade size=1px color="#aeaeae">
     <div id="menu">
-      <!--onClick="alert('11월 12일에 공개됩니다.'); document.location='main.html';" //art, about 타겟 뒤에 붙이기
+      <!--onClick="alert('11월 12일에 공개됩니다.'); document.location='main.html';" //art, about 타겟 뒤에 붙이기-->
       <span><a href="main/intro.html" target="_self"><img src="img/main.png" width="120px"></a>
       <span><a href="art/debs_art.html" target="_self"><img src="img/art.png" width="120px"></a>
-      <span><a href="about/cong_message.html" target="_self"><img src="img/about.png" width="120px"></a> -->
+      <span><a href="about/aboutdebs.html" target="_self"><img src="img/about.png" width="120px"></a>
+        <!--
       <span><a href="main.html" target="_self" onClick="alert('11월 12일에 공개됩니다.');"><img src="img/main.png"></a>
       <span><a href="main.html" target="_self" onClick="alert('11월 12일에 공개됩니다.');"><img src="img/art.png"></a>
       <span><a href="main.html" target="_self" onClick="alert('11월 12일에 공개됩니다.');"><img src="img/about.png"></a>
+    -->
     </div>
     <!--<p><img src="img/v.png" class="button">-->
 
     <div id="menu_in">
       <table>
         <tr>
-          <td id="menu_table"><a href="main/intro.html">방송국소개</a></td>
+          <td id="menu_table"><a href="main/intro.html">행사소개</a></td>
           <td id="menu_table"><a href="art/debs_art.html">국원작품</a></td>
-          <td id="menu_table"><a href="about/cong_message.html">축사</a></td>
+          <td id="menu_table"><a href="about/aboutdebs.html">방송국소개</a></td>
         </tr>
         <tr>
-          <td id="menu_table"><a href="main/timetable.html">편성표</a></td>
+        <td id="menu_table"><a href="main/cong_message.html">축사</a></td>
           <td id="menu_table"><a href="art/som_art.html">솜솜영상대회</a></td>
-          <td id="menu_table"><a href="about/greeting.html">모시는 글</a></td>
+          <td id="menu_table"><a href="about/timetable.html">편성표</a></td>
         </tr>
         <tr>
-          <td id="menu_table"><a href="main/history.html">연혁</a></td>
+          <td id="menu_table"><a href="main/greeting.html">모시는 글</a></td>
           <td id="menu_table"></td>
-          <td id="menu_table"><a href="about/epilogue.html">제작후기</a></td>
+          <td id="menu_table"><a href="about/history.html">연혁</a></td>
+        </tr>
+        <tr>
+        <td id="menu_table"><a href="main/epilogue.html">제작후기</a></td>
+          <td></td>
+          <td></td>
+        </tr>
         </table>
       </div>
 
