@@ -20,6 +20,34 @@
     </script>-->
     <title>2020 DEBS 온라인 영상제</title>
     <style>
+      h3 {
+        font-weight: bold;
+        margin:0 auto;
+        padding: 30px 0px;
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        max-width: 800px;
+      }
+      h4 {
+        font-weight: bold;
+        margin:0 auto;
+        padding: 20px 0px;
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        max-width: 800px;
+      }
+      h3::before, h3::after, h4::before, h4::after {
+        content: "";
+        background: rgba(0, 0, 0, 0.5);
+        flex-grow: 1;
+        height: 1px;
+        font-size: 0px;
+        line-height: 0px;
+        margin: 0px 16px;
+        max-width: 620px;
+      }
       #main td {
         font-size: 16px;
         line-height: 150%;
@@ -29,22 +57,22 @@
       @media (max-width:767px) {
         #main td {
           padding-left: 2px;
-          padding-bottom: 8px;
-          padding-top: 8px;
+          padding: 8px 0px;
           min-width: 68px;
           font-size: 13px;
         }
         #som_art_pc { display: none; }
+        h3 { display: none;}
       }
       @media (min-width: 768px) {
         #som_art {float: left;}
         #main td {
           padding-left: 3px;
-          padding-bottom: 10px;
-          padding-top: 10px;
+          padding: 10px 0px;
           min-width: 95px;
         }
         #som_art_mobile { display: none; }
+        h4 { display: none; }
       }
     </style>
   </head>
@@ -89,16 +117,15 @@
       </div>
       <hr noshade size=1px color="#aeaeae">
 
-
       <div id="main">
-        영상제 포스터/솜솜공모 포스터->공모전 이미지가 작아서 큰걸로 교체예정
-        <p><a href="">영상제(하이퍼링크 아직x)</a>&nbsp;<a href="#som_art">솜솜영상공모전</a>
+        <h3>제43회 DEBS 온라인 방송제</h3>
+        <h4>제43회 DEBS 온라인 방송제</h4>
+        <img src="../img/main_poster.png" width="100%" id="festa">
+        <h4>솜솜 영상 공모전: SNS는 사랑을 싣고</h4>
+        <h3>솜솜 영상 공모전: SNS는 사랑을 싣고</h3>
         <img src="../img/som_poster.png" width="100%" id="som_art">
         <p>&nbsp;</p>
         <table id="som_art_pc">
-          <tr>
-            <td colspan="2"><h3 style="font-weight: bold; text-align: center; padding-bottom: 5px;">솜솜 영상 공모전: SNS는 사랑을 싣고</h3></td>
-          </tr>
           <tr>
             <td style="font-weight: bold;">영상주제</td>
             <td>SNS 관련 자유 주제</td>
@@ -109,16 +136,16 @@
           </tr>
           <tr>
             <td style="font-weight: bold;">참가자격</td>
-            <td>동덕여자대학교 재학 중인 학우라면 누구나 (1~4인 팀)</td>
+            <td>동덕여자대학교 재학 중인 학우라면 누구나 (휴학생 포함, 1~4인 팀 참가)</td>
           </tr>
           <tr>
             <td style="font-weight: bold;">접수기간</td>
-            <td>2020. 11. 02. (월) ~ 2020. 11. 11. (수) 22:00까지</td>
+            <td>2020. 11. 02. (월) ~ 2020. 11. 18. (수) 22:00까지</td>
           </tr>
           <tr>
             <td valign="top" style="font-weight: bold;">지원방법</td>
             <td>dongdukdebs@naver.com 으로 영상과 지원서 제출
-              <br>지원서 링크: (폼/구글드라이브 문서 링크)</td>
+              <br>지원서 링크: 학교 포털, 에브리타임 DEBS 게시판 참고</td>
           </tr>
           <tr>
             <td valign="top" style="font-weight: bold;">심사방법</td>
@@ -137,7 +164,7 @@
                 <tr>
                   <td style="padding-top: 0px;">1등</td>
                   <td width="110px;" style="padding-top: 0px;">1팀</td>
-                  <td style="padding-top: 0px;">아이패드 8세대 + 애플펜슬 1세대</td>
+                  <td style="padding-top: 0px;">아이패드 7세대</td>
                 </tr>
                 <tr>
                   <td>2등</td>
@@ -173,9 +200,6 @@
 
         <table id="som_art_mobile">
           <tr>
-            <td colspan="2"><h4 style="font-weight: bold; text-align: center; padding-bottom: 5px;">솜솜 영상 공모전: SNS는 사랑을 싣고</h4></td>
-          </tr>
-          <tr>
             <td style="font-weight: bold;">영상주제</td>
             <td>SNS 관련 자유 주제</td>
           </tr>
@@ -184,17 +208,17 @@
             <td>3분 이상 7분 미만 자유 형식</td>
           </tr>
           <tr>
-            <td style="font-weight: bold;">참가자격</td>
-            <td>동덕여자대학교 재학 중인 학우라면 누구나 (1~4인 팀)</td>
+            <td valign="top" style="font-weight: bold;">참가자격</td>
+            <td>동덕여자대학교 재학 중인 학우라면 누구나<br>(휴학생 포함, 1~4인 팀 참가)</td>
           </tr>
           <tr>
             <td style="font-weight: bold;">접수기간</td>
-            <td>2020. 11. 02. (월) ~ 2020. 11. 11. (수) 22:00까지</td>
+            <td>2020. 11. 02. (월) ~ 2020. 11. 18. (수) 22:00까지</td>
           </tr>
           <tr>
             <td valign="top" style="font-weight: bold;">지원방법</td>
             <td>dongdukdebs@naver.com 으로 영상과 지원서 제출
-              <br>지원서 링크: (폼/구글드라이브 문서 링크)</td>
+              <br>지원서 링크: 학교 포털, 에브리타임 DEBS 게시판 참고</td>
           </tr>
           <tr>
             <td valign="top" style="font-weight: bold;">심사방법</td>
@@ -213,8 +237,7 @@
                 <tr>
                   <td style="padding-top: 0px;">1등</td>
                   <td width="110px;" style="padding-top: 0px;">1팀</td>
-                  <td style="padding-top: 0px;">아이패드 7세대
-                    <br>+ 애플펜슬 1세대</td>
+                  <td style="padding-top: 0px;">아이패드 7세대</td>
                 </tr>
                 <tr>
                   <td>2등</td>
