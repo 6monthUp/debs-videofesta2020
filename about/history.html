@@ -18,30 +18,82 @@
         });
       });
     </script>-->
+    <script type="text/javascript">
+    function fir() {
+      document.getElementById("history_table_1").style.display = "block";
+      document.getElementById("history_table_2").style.display = "none";
+      document.getElementById("history_table_3").style.display = "none";
+    }
+    function sec() {
+      document.getElementById("history_table_1").style.display = "none";
+      document.getElementById("history_table_2").style.display = "block";
+      document.getElementById("history_table_3").style.display = "none";
+    }
+    function thi() {
+      document.getElementById("history_table_1").style.display = "none";
+      document.getElementById("history_table_2").style.display = "none";
+      document.getElementById("history_table_3").style.display = "block";
+    }
+    </script>
     <style>
     p {
+      margin:0 auto;
       font-size: 30px;
       font-weight: bold;
       padding: 40px;
-      position: relative;
-      right: 80px;
+      display: flex;
+      flex-basis: 100%;
+      align-items: center;
+      max-width: 800px;
+    }
+    p::before, p::after {
+      content: "";
+      background: rgba(0, 0, 0, 0.3);
+      flex-grow: 1;
+      height: 1px;
+      font-size: 0px;
+      line-height: 0px;
+      margin: 0px 16px;
+      max-width: 620px;
+    }
+    #history_menu {margin-bottom: 30px;}
+    #history_menu span {
+      border-right: 1px solid black;
+      font-size: 17px;
+      padding: 0px 15px;
+    }
+    #history_menu a:link {color: rgb(70, 110, 135);}
+    #history_menu a:visited {color: rgb(70, 110, 135);}
+    #history_menu a:hover {text-decoration: none; color: rgb(70, 110, 135); font-weight: bold; position: relative; bottom: 3px;}
+    #history_table {
+      width: 100%;
+      margin:0 auto;
+      max-width: 620px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: 200%;
+    }
+    #history_table table {
+      width: 550px;
     }
     #history_table td {
       text-align: left;
       font-size: 15px;
     }
     #history_table #year {
+      color: rgb(190, 80, 110);
       padding-top: 3px;
       width: 80px;
       font-size: 20px;
       font-weight: bold;
       text-align: right;
     }
+    #history_table_2 {display: none;}
+    #history_table_3 {display: none;}
     #month {
       padding-bottom: 30px;
     }
     @media (max-width: 768px) {
-      p { position: relative; right: 50px;}
       #history_table td {font-size: 13px;}
       #history_table #year {font-size: 17px; width: 70px;}
     }
@@ -90,7 +142,15 @@
       </div>
       <hr noshade size=1px color="#aeaeae">
 <p>History Of DEBS</p>
+
+<div id="history_menu">
+<span><a href="#" target="_self" onClick="fir()">~1979</a></span>
+<span><a href="#" target="_self" onClick="sec()">1980~1999</a></span>
+<span style="border-right: 0px;"><a href="#" target="_self" onClick="thi()">2000~2019</a></span>
+</div>
+
 <div id="history_table">
+<div id="history_table_1">
 <table><tr><td id="year">1958. 09	</td><td></td></tr><tr><td colspan="2" id="month">동덕여자대학 방송반 창설<br>KBS 주최 제4회 전국대학 방송경연대회 <br>&emsp;[가을비 / 이정희 작] 개인 연기상 수상
 </td></tr><tr><td id="year">1959. 09	</td><td></td></tr><tr><td colspan="2" id="month">KBS 주최 제5회 전국대학 방송경연대회 <br>&emsp;[소리 / 이계화 작] 단체 장려상, 개인 연기상 수상
 </td></tr><tr><td id="year">1960. 09	</td><td></td></tr><tr><td colspan="2" id="month">KBS 주최 제6회 전국대학 방송경연대회 <br>&emsp;[내일모레 / 이경숙 작] 단체 장려상, 개인 연기상 수상
@@ -103,8 +163,11 @@
 </td></tr><tr><td id="year">1975. 09	</td><td></td></tr><tr><td colspan="2" id="month">동덕여자대학 방송반 부활
 </td></tr><tr><td id="year">1977. 04	</td><td></td></tr><tr><td colspan="2" id="month">동덕여자대학 방송국으로 승격<br>MBC주최 제1회 전국대학 방송경연대회 <br>&emsp;[사랑의 종이 울릴 때 / 홍형숙 작] 종합구성 우수상, 개인PD상 수상<br>제1회 목화방송제 개최
 </td></tr><tr><td id="year">1978. 11	</td><td></td></tr><tr><td colspan="2" id="month">TBC주최 제10회 전국대학 방송경연대회 <br>&emsp;[이고 지고 메고 가리이까 / 문희옥 작] 종합구성 우수상, 기획상 수상
-</td></tr><tr><td id="year">1979. 05	</td><td></td></tr><tr><td colspan="2" id="month">목회축전 특집 제1회 젊음의 행진 개최<br>제3회 목화방송제 개최
-</td></tr><tr><td id="year">1980. 09	</td><td></td></tr><tr><td colspan="2" id="month">‘DCBS→DEBS’ 호출부호 변경<br>‘방송국→교육 방송국’으로 명칭 변경<br>제4회 DEBS 방송제 무산
+</td></tr><tr><td id="year">1979. 05	</td><td></td></tr><tr><td colspan="2" id="month">목회축전 특집 제1회 젊음의 행진 개최<br>제3회 목화방송제 개최</td></tr></table>
+</div>
+
+<div id="history_table_2">
+<table><tr><td id="year">1980. 09	</td><td></td></tr><tr><td colspan="2" id="month">‘DCBS→DEBS’ 호출부호 변경<br>‘방송국→교육 방송국’으로 명칭 변경<br>제4회 DEBS 방송제 무산
 </td></tr><tr><td id="year">1981. 05	</td><td></td></tr><tr><td colspan="2">제2회 젊음의 행진 개최
 </td></tr><tr><td id="year">1981. 07 </td><td></td></tr><tr><td colspan="2">	MBC 주최 제5회 전국대학 방송경연대회 <br>&emsp;[알캉 실캉 몰캉 / 계명옥 작] 동상 수상
 </td></tr><tr><td id="year">1981. 09 </td><td></td></tr><tr><td colspan="2" id="month">	제5회 DEBS 방송제 개최
@@ -115,7 +178,7 @@
 </td></tr><tr><td id="year">1984. 05	</td><td></td></tr><tr><td colspan="2">제5회 뫼비우스의 聲 개최[목화 DJ 경연대회]
 </td></tr><tr><td id="year">1984. 09 </td><td></td></tr><tr><td colspan="2" id="month">	제8회 DEBS방송제 개최
 </td></tr><tr><td id="year">1985. 05	</td><td></td></tr><tr><td colspan="2">제6회 뫼비우스의 聲 개최[목화 DJ 경연대회]
-</td></tr><tr><td id="year">1985. 09 </td><td></td></tr><tr><td colspan="2"> id="month"	제9회 DEBS방송제 개최
+</td></tr><tr><td id="year">1985. 09 </td><td></td></tr><tr><td colspan="2" id="month"> id="month"	제9회 DEBS방송제 개최
 </td></tr><tr><td id="year">1986. 05	</td><td></td></tr><tr><td colspan="2">제7회 뫼비우스의 聲 개최[목화 DJ 경연대회]
 </td></tr><tr><td id="year">1986. 09 </td><td></td></tr><tr><td colspan="2" id="month">	제10회 DEBS방송제 개최
 </td></tr><tr><td id="year">1987. 05	</td><td></td></tr><tr><td colspan="2">제8회 뫼비우스의 聲 개최[목화 DJ 경연대회]
@@ -138,15 +201,16 @@
 </td></tr><tr><td id="year">1995. 09	</td><td></td></tr><tr><td colspan="2" id="month">제19회 DEBS방송제 개최
 </td></tr><tr><td id="year">1996. 05 </td><td></td></tr><tr><td colspan="2">   	제17회 뫼비우스의 聲 개최[방송작품 경연대회]
 </td></tr><tr><td id="year">1996. 09 </td><td></td></tr><tr><td colspan="2" id="month">	제20회 DEBS방송제 개최
-
-
 </td></tr><tr><td id="year">1997. 05 </td><td></td></tr><tr><td colspan="2">   	제21회 DEBS방송제 개최
 </td></tr><tr><td id="year">1997. 10 </td><td></td></tr><tr><td colspan="2" id="month">	제18회 뫼비우스의 聲 개최[방송작품 경연대회]
 </td></tr><tr><td id="year">1998. 04 </td><td></td></tr><tr><td colspan="2">   	이전 학생관 방송국에서 현 숭인관 방송국으로 확대 이전
 </td></tr><tr><td id="year">1998. 06 </td><td></td></tr><tr><td colspan="2" id="month">	제19회 뫼비우스의 聲 개최[방송작품 경연대회]
 </td></tr><tr><td id="year">1999. 05 </td><td></td></tr><tr><td colspan="2">   	제22회 DEBS방송제 개최
-</td></tr><tr><td id="year">1999. 10 </td><td></td></tr><tr><td colspan="2" id="month">	제20회 뫼비우스의 聲 개최[방송작품 경연대회]
-</td></tr><tr><td id="year">2000. 05 </td><td></td></tr><tr><td colspan="2">   	제23회 DEBS방송제 개최
+</td></tr><tr><td id="year">1999. 10 </td><td></td></tr><tr><td colspan="2" id="month">	제20회 뫼비우스의 聲 개최[방송작품 경연대회]</td></tr></table>
+</div>
+
+<div id="history_table_3">
+<table><tr><td id="year">2000. 05 </td><td></td></tr><tr><td colspan="2">   	제23회 DEBS방송제 개최
 </td></tr><tr><td id="year">2000. 09 </td><td></td></tr><tr><td colspan="2" id="month">	제21회 뫼비우스의 聲 개최[방송작품 경연대회]
 </td></tr><tr><td id="year">2001. 05 </td><td></td></tr><tr><td colspan="2">   	제24회 DEBS방송제 개최
 </td></tr><tr><td id="year">2001. 09 </td><td></td></tr><tr><td colspan="2" id="month">	제22회 뫼비우스의 聲 개최[방송작품 경연대회]
@@ -187,7 +251,7 @@
 </td></tr><tr><td id="year">2019. 05 </td><td></td></tr><tr><td colspan="2">   	제42회 DEBS방송제 개최
 </td></tr><tr><td id="year">2019. 09	</td><td></td></tr><tr><td colspan="2" id="month">제7회 DEBS 오픈스튜디오 개최</td></tr></table>
 </div>
-
+</div>
 <hr noshade size=1px color="#aeaeae">
 <div id="under">
   <table>
