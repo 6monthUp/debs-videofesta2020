@@ -13,6 +13,93 @@
     <link type="text/css" rel="stylesheet" href="../style_default.css">
     <title>2020 DEBS 온라인 영상제</title>
   </head>
+  <style>
+  p {
+    line-height: 1.5;
+  }
+  h3, h4 {
+    margin:0 auto;
+    font-weight: bold;
+    padding: 40px;
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    max-width: 800px;
+  }
+  h3::before, h3::after, h4::before, h4::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.3);
+    flex-grow: 1;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 16px;
+    max-width: 620px;
+  }
+  #under table {
+    margin: 0px auto;
+  }
+  #orga img {
+    margin: 50px 0px;
+    width: 100%;
+  }
+  #main table {
+    width: 100%;
+    text-align: left;
+    margin: 10px 0px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  #depart img {
+    width: 200px;
+    margin-bottom: 5px;
+  }
+  #main {
+    margin-bottom: 70px;
+  }
+  #name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #intro table {
+    text-align: center;
+  }
+  #debs {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #intro td {
+    padding: 10px 0px;
+  }
+  #depart td {
+    padding: 5px 0px;
+  }
+  #intro img {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 767px) {
+    #main table {
+      margin: 10px 0px;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    #depart img {
+      width: 140px;
+      padding-bottom: 10px;
+    }
+    #intro img {
+      width: 170px;
+      padding-bottom: 10px;
+    }
+    #name { font-size: 17px;}
+    h3 { display: none; }
+  }
+  @media (min-width: 768px) {
+    h4 { display: none; }
+  }
+  </style>
   <body>
 
     <div class="container">
@@ -54,9 +141,42 @@
       </div>
       <hr noshade size=1px color="#aeaeae">
 
-
       <div id="main">
-        인사말/조직도/부서소개 들어갈 예정
+        <h3>DEBS</h3>
+        <h4>DEBS</h4>
+        <div id="intro">
+          <table>
+            <tr><td><img src="../img/debs.png"></td></tr>
+            <tr><td id="debs">찬 머리, 밝은 눈, 뜨거운 가슴의 DEBS<br>여기는 동덕여자대학교 교육 방송국입니다.</td></tr>
+            <tr><td>동덕여자대학교 교육 방송국 DEBS(Dongduk women's Education Broadcasting system)는
+              1958년 본 대학교의 교육이념인 도의·진리·화협에 입각한 교육목적에 이바지하고,
+              교내외 제반행사의 공지 및 교양 증진과 정서함양은 물론, 대학 방송의 발전에 공헌하기 위하여 설립되었습니다.
+            </td></tr><tr><td>본 방송국 DEBS는 매 학기 정규방송을 통해 보다 더 유익하고 활기찬 대학생활을 즐길 수 있도록 노력하고 있습니다.
+          </td></tr></table>
+        </div>
+        <div id="orga">
+          <h3>조직도</h3>
+          <h4>조직도</h4>
+          <img src="../img/organization.png">
+        </div>
+        <div id="depart">
+          <h3>부서소개</h3>
+          <h4>부서소개</h4>
+        <table>
+          <tr><td rowspan="2" valign="bottom"><img src="../img/announcer.png"></td><td id="name">아나운서부</td></tr>
+          <tr><td>학내외 여러 소식을 전달하는 뉴스 진행, DJ 진행, 드라마, 다큐멘터리의 나레이션 등 다양한 장르로
+            Audio방송과 TV방송을 통해 학우들에게 방송의 모든것을 직접 전달하는 중요한 역할을 담당하며 본 방송국 행사시 진행을 맡고 있습니다.
+          </td></tr><tr><td>&nbsp;</td></tr>
+          <tr><td rowspan="2" valign="bottom"><img src="../img/anchor.png"></td><td id="name">보도부</td></tr>
+          <tr><td>교내 소식을 알려주는 뉴스와 학내외 이슈에 대해 심층있게 다루는 기자석 및 논평 프로그램을 담당하고 있습니다.
+            발 빠른 취재와 스크립트 작성, 정확한 보도를 주요 활동으로 하며, 라디오제작부와 TV 제작부의 기술을 함께 다루는 부서입니다.
+          </td></tr><tr><td>&nbsp;</td></tr>
+          <tr><td rowspan="2" valign="bottom"><img src="../img/pd.png"></td><td id="name">제작기술부</td></tr>
+          <tr><td>방송국내 영상물 제작, 촬영, 편집 및 오디오 방송 기획, 녹음, 편집, 송출을 담당하고 있습니다.
+            학기 중에는 정규방송의 제작, 편집기술을 실시하고 행사시에는 영상 작품과 영상기술 및 총연출을 담당합니다.
+          </td></tr>
+        </table>
+        </div>
       </div>
 
 
