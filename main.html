@@ -12,6 +12,26 @@
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
     <link type="text/css" rel="stylesheet" href="style_default.css"></link>
     <style>
+    p {
+      margin:0 auto;
+      font-size: 30px;
+      font-weight: bold;
+      padding: 20px;
+      display: flex;
+      flex-basis: 100%;
+      align-items: center;
+      max-width: 800px;
+    }
+    p::before, p::after {
+      content: "";
+      background: rgba(0, 0, 0, 0.3);
+      flex-grow: 1;
+      height: 1px;
+      font-size: 0px;
+      line-height: 0px;
+      margin: 0px 16px;
+      max-width: 620px;
+    }
     .poster {
       width: 100%;
     }
@@ -27,6 +47,10 @@
       left: 300px;
       bottom: 50px;
     }
+    iframe {
+      margin: 10px;
+      background-color: rgba(255, 255, 255,0);
+    }
     #frame_menu {
       position: absolute;
       left: 3%;
@@ -38,6 +62,40 @@
       width: 50em;
       border-right: 0px solid #aeaeae;
       border-left: 0px solid #aeaeae;
+    }
+    #main_div {
+      opacity: 0.3;
+    }
+    #pre_art {
+    }
+    @media (max-width: 767px) {
+      p {
+        font-size: 17px;
+      }
+      iframe{
+        width: 320px;
+        height: 180px;
+      }
+      #pre_art {
+        position: relative;
+        top: 20px;
+        height: 0px;
+        overflow: visible;
+        z-index: 1;
+      }
+    }
+    @media (min-width: 768px) {
+      iframe {
+        width: 560px;
+        height: 315px;
+      }
+      #pre_art {
+        position: relative;
+        top: 40px;
+        height: 0px;
+        overflow: visible;
+        z-index: 1;
+      }
     }
   </style>
   </head>
@@ -81,6 +139,14 @@
     </div>
 
       <hr noshade size=1px color="#aeaeae">
+      <div id="pre_art">
+        <p>TEASER</p>
+        <iframe src="https://www.youtube.com/embed/PpuEkD3_Ne8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p>DEBS SNS - 내가 Follow 하랬잖아</p>
+        <iframe src="https://www.youtube.com/embed/3hA4CtjIxeA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
       <div id="main_div" class="poster">
         <img src="img/main_poster.jpg" width="100%" style="margin-top: 5px;">
       </div>
