@@ -12,10 +12,54 @@
     <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
     <link type="text/css" rel="stylesheet" href="../style_default.css">
     <style>
-    #intro tr {
+    #main p {
+      font-size: 15px;
       text-align: left;
+      margin-left: 30px;
+      padding: 20px;
     }
-    @media (max-width:479px) {
+    #main #artname {
+      font-weight: bold;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    #art {
+      padding: 10px 0px;
+      background-color: rgba(255, 255, 255, 0.3)
+    }
+    #main hr {
+      margin: 30px 0px;
+    }
+    #art hr {
+      margin: 0px 0px 10px 0px;
+      max-width: 400px;
+      position: relative;
+      left: 30px;
+      bottom: 10px;
+      border-top: 1px solid rgba(70, 110, 135, 0.7);
+    }
+    #main #art_class {
+      margin:0 auto;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 40px;
+      display: flex;
+      flex-basis: 100%;
+      align-items: center;
+      max-width: 800px;
+    }
+    #art_class::before, #art_class::after {
+      content: "";
+      background: rgba(0, 0, 0, 0.3);
+      flex-grow: 1;
+      height: 1px;
+      font-size: 0px;
+      line-height: 0px;
+      margin: 0px 16px;
+      max-width: 620px;
+    }
+    @media (max-width:767px) {
       #intro {
         width: 300px;
       }
@@ -23,14 +67,22 @@
         width: 320px;
         height: 180px;
       }
+      #manner {
+        width: 240px;
+        height: 135px;
+      }
     }
-    @media (min-width: 480px) {
+    @media (min-width: 768px) {
       #intro {
         width: 500px;
       }
       iframe {
         width: 560px;
         height: 315px;
+      }
+      #manner {
+        width: 320px;
+        height: 180px;
       }
     }
     </style>
@@ -45,13 +97,11 @@
     <hr noshade size=1px color="#aeaeae">
 
     <div id="menu">
-      <!--onClick="alert('11월 12일에 공개됩니다.'); document.location='outline.html';" //art, about 타겟 뒤에 붙이기-->
       <span><a href="../main/intro.html"><img src="../img/main.png"></a>
       <span><a href="../art/debs_art.html"><img src="../img/art.png"></a>
       <span><a href="../about/aboutdebs.html"><img src="../img/about.png"></a></span>
     </div>
 
-    <!--<p><img src="../img/v.png" class="button">-->
     <div id="menu_in">
       <table>
         <tr>
@@ -79,37 +129,37 @@
       <hr noshade size=1px color="#aeaeae">
 
 
-
-      <!--<table>
-        <tr>
-          <td rowspan="2"><iframe width="960" height="540" src="https://www.youtube.com/embed/aiS04wJ6v90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-          <td id="title">제목</td>
-        </tr>
-        <tr>
-          <td id="content">내용<br>내용<br>내용<br><br>제작 기술 출연</td>
-        </tr>
-        <tr id="air"></tr>
-        <tr>
-          <td rowspan="2"><iframe width="960" height="540" src="https://www.youtube.com/embed/aiS04wJ6v90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-          <td id="title">제목</td>
-        </tr>
-        <tr>
-          <td id="content">내용<br>내용<br>내용<br><br>제작 기술 출연</td>
-        </tr>-->
       <div id="main">
-        <iframe src="https://www.youtube.com/embed/aiS04wJ6v90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <table id="intro">
-          <tr><td><h3>제목</h3></td></tr>
-          <tr><td>작품설명</td></tr>
-          <tr><td><h5>제작자</h5></td></tr>
-        </table>
-        <br><br>
-        <p><iframe src="https://www.youtube.com/embed/aiS04wJ6v90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <table id="intro">
-          <tr><td><h3>제목</h3></td></tr>
-          <tr><td>작품설명</td></tr>
-          <tr><td><h5>제작자</h5></td></tr>
-        </table>
+        <p style="margin: 5px 0px auto; padding: 0px; text-align: center;">지켜주세요! 방송제 관람예절</p>
+        <iframe id="manner" src="https://www.youtube.com/embed/1N92WMZsBDY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p id="art_class"> DEBS 국원 작품전 </p>
+
+        <div id="art">
+        <p id="artname">Cyberbullying</p>
+        <hr>
+        <iframe src="https://www.youtube.com/embed/iosmkKVW2vI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p id="artintro">오늘따라 은보를 바라보는 주변 시선이 이상하다.<br>온라인과 오프라인, 현실 세계는 어느 쪽?</p>
+        </div>
+
+        <br>
+
+        <div id="art">
+        <p id="artname">델리만쥬 같은 친구들</p>
+        <hr>
+        <iframe src="https://www.youtube.com/embed/yyenYLij0ZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p id="artintro">나도 SNS 시작해볼까? 고민하는 지연과 조금 독특한 친구들의 이야기</p>
+        </div>
+
+        <br>
+
+        <div id="art">
+        <p id="artname">제47기 수습국원 특별작: DEBS 국원소개</p>
+        <hr>
+        <iframe src="https://www.youtube.com/embed/EOoA487wE1Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p id="artintro">제43회 DEBS 온라인 방송제를 준비한 DEBS 국원들을 소개합니다!</p>
+        </div>
+
       </div>
 
 

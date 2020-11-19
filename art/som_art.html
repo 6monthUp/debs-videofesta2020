@@ -12,6 +12,81 @@
     <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
     <link type="text/css" rel="stylesheet" href="../style_default.css">
   </head>
+  <style>
+  #main p {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 30px;
+    padding: 20px;
+  }
+  #main #artname {
+    font-weight: bold;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #art {
+    padding: 10px 0px;
+    background-color: rgba(255, 255, 255, 0.3)
+  }
+  #main hr {
+    margin: 30px 0px;
+  }
+  #art hr {
+    margin: 0px 0px 10px 0px;
+    max-width: 400px;
+    position: relative;
+    left: 30px;
+    bottom: 10px;
+    border-top: 1px solid rgba(70, 110, 135, 0.7);
+  }
+  #main #art_class {
+    margin:0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 40px;
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    max-width: 800px;
+  }
+  #art_class::before, #art_class::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.3);
+    flex-grow: 1;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 16px;
+    max-width: 620px;
+  }
+  @media (max-width:767px) {
+    #intro {
+      width: 300px;
+    }
+    iframe{
+      width: 320px;
+      height: 180px;
+    }
+    #manner {
+      width: 240px;
+      height: 135px;
+    }
+  }
+  @media (min-width: 768px) {
+    #intro {
+      width: 500px;
+    }
+    iframe {
+      width: 560px;
+      height: 315px;
+    }
+    #manner {
+      width: 320px;
+      height: 180px;
+    }
+  }
+  </style>
   <body>
 
     <div class="container">
@@ -57,7 +132,53 @@
 
 
       <div id="main">
-      국원 작품 페이지와 형식 동일, 공모전 영상 들어갈 예정
+        <p style="margin: 5px 0px auto; padding: 0px; text-align: center;">지켜주세요! 방송제 관람예절</p>
+        <iframe id="manner" src="https://www.youtube.com/embed/1N92WMZsBDY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p id="art_class"> 솜솜 영상 공모전: 작품전 </p>
+        <div style="line-height: 170%;">
+          <font style="font-weight: bold; font-size: 16px;">솜솜 영상 공모전 심사에 직접 참가해주세요!</font><br><br>
+          영상이 마음에 들었다면 유튜브 채널에서 <font style="font-weight: bold;">작품 설명</font>을 읽고 <font style="font-weight: bold;">좋아요</font>를 눌러주세요!<br>
+          영상의 유튜브 좋아요 수는 <font style="font-weight: bold;">제43회 DEBS 온라인 방송제-솜솜영상공모전 심사에 반영됩니다.</font>
+          <br><font style="font-size: 13px;color: rgba(0, 0, 0, 0.5);">*싫어요 수는 심사에 반영되지 않습니다.</font>
+          <br>&nbsp;
+          <br>&nbsp;
+        </div>
+
+        <div id="art">
+          <p id="artname">The Letter</p>
+          <hr>
+          <iframe src="https://www.youtube.com/embed/TUTXMLwB5_8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p id="artintro">제작: 춤추는 달꽃팀 유지수</p>
+        </div>
+
+        <br>
+
+        <div id="art">
+          <p id="artname">유튜브 밖에서</p>
+          <hr>
+          <iframe src="https://www.youtube.com/embed/fkldCZVZISU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p id="artintro">제작: 보렝주렝팀 주렝 외 1인</p>
+        </div>
+
+        <br>
+
+        <div id="art">
+          <p id="artname">sns유형별 망고주스 먹는 방법</p>
+          <hr>
+          <iframe src="https://www.youtube.com/embed/53OtOpIhUYI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p id="artintro">제작: 스팀 윤유나</p>
+        </div>
+
+        <br>
+
+        <div id="art">
+          <p id="artname">How are you?</p>
+          <hr>
+          <iframe src="https://www.youtube.com/embed/M6iT4v1-xYI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p id="artintro">제작: 권희경팀 권희경</p>
+        </div>
+
       </div>
 
 
